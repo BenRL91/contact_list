@@ -11,13 +11,14 @@
 .contacts {
   height: 100%;
   width: 100%;
-  background: blue;
 }
 .title {
   height: 25px;
   width: 100%;
-  background: yellow;
-  border-bottom: 3px solid lighten(green, 5%);
+  background: #81BC39;
+  font-size: 20px;
+  padding: 5px;
+  border-bottom: 3px solid #649C1A;
 }
 .contact {
   display: flex;
@@ -33,15 +34,35 @@
   height: 200px;
   width: 200px;
 }
-.name {
-  height: 50px;
+.murray {
+  height: 100px;
+  margin-right: 20px;
 }
-.website {
-  height:50px;
+.singlePage {
+  border: 1px solid #EDEDED;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-.number {
-  height: 50px;
+.picContainer {
+  background: #A7D076;
+  width: 300px;
+  display: flex;
+  justify-content: center;
 }
-.location {
-  height: 50px;
+.spanContainer {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #EDEDED;
+  img {
+    height: 30px;
+    margin-right: 12px;
+  }
+}
+button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
 }

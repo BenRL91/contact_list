@@ -5,7 +5,7 @@ import SingleContact from './singlecontact';
 export default class SingleContactPage extends React.Component {
   render(){
     return(
-        <div class='singlePage'>
+        <div className='singlePage'>
         <button onClick={this.props.Activate}>Go Back</button>
         <SingleContact
         imageURL={this.props.info.imageURL}

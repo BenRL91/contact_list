@@ -7,7 +7,7 @@ export default class Contact extends React.Component {
   render(){
     return(
       <div className='contact' onClick={::this.clickhandler}>
-        <img src={this.props.imageURL}/>
+        <img className='murray' src={this.props.imageURL}/>
         <span>{this.props.name}</span>
       </div>
     )
