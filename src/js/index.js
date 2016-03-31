@@ -2,7 +2,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Home from './home';
-ReactDOM.render(
-  <Home/>,
+import Contact from './contact';
+import SingleContactPage from './singleconpage';
+import SingleContact from './singlecontact';
+function renderHome(){
+  ReactDOM.render(
+  <Home Activate={renderSingleContactPage}/>,
   document.querySelector('.app')
-);
+)}
+function renderSingleContactPage(contact){
+  ReactDOM.render(
+  <SingleContactPage Activate={renderHome} info={contact}/>,
+  document.querySelector('.app')
+)}
+
+renderHome()
